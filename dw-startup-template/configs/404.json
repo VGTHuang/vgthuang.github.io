@@ -1,0 +1,14 @@
+[
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "Oops!{.text-h2}\n\n404 error{.text-h5}"
+            }
+        ],
+        "backgroundColor": "#e0e0e0",
+        "textColor": "#000000",
+        "height": 100
+    }
+]

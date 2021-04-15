@@ -1,0 +1,66 @@
+{
+    "companyName": "公司名称",
+    "companyLogo": "/imgs/logo.png",
+    "primaryColor": "#404040",
+    "secondaryColor": "#808080",
+    "backgroundColor": "#ffffff",
+    "textColor": "#000000",
+    "defaultPages": {
+        "homePage": "/home",
+        "notFoundPage": "/404"
+    },
+    "pageConfigDictionary": {
+        "/home": "/configs/homepage.json",
+        "/404": "/configs/404.json",
+        "/productList/product1": "/configs/product1.json",
+        "/productList/product2": "/configs/product2.json"
+    },
+    "siteMap": [
+        {
+            "text": "首页",
+            "url": "/home"
+        },
+        {
+            "text": "产品与服务",
+            "children": [
+                {
+                    "text": "产品1",
+                    "url": "/productList/product1"
+                },
+                {
+                    "text": "产品2",
+                    "url": "/productList/product2"
+                },
+                {
+                    "text": "产品3",
+                    "url": "/productList/product3"
+                }
+            ]
+        },
+        {
+            "text": "新闻",
+            "children": [
+                {
+                    "text": "新闻界面1",
+                    "url": "/news/news1"
+                },
+                {
+                    "text": "新闻界面2",
+                    "url": "/news/news2"
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "© 1234-5678 XXX. All rights reserved."
+            }
+        ],
+        "backgroundColor": "#202020",
+        "textColor": "#ffffff",
+        "height": 0
+    }
+}

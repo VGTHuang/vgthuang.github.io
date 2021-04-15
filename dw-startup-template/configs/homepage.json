@@ -1,0 +1,161 @@
+[
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "/md/slide1.md",
+                "slots": [
+                    {
+                        "type": "row",
+                        "content": [
+                            {
+                                "type": "button",
+                                "content": "按钮1",
+                                "backgroundColor": "#000000",
+                                "textColor": "#ffffff",
+                                "url": "https://taobao.com"
+                            },
+                            {
+                                "type": "button",
+                                "content": "按钮2",
+                                "backgroundColor": "#ffffff",
+                                "textColor": "#000000",
+                                "url": "https://jd.com"
+                            }
+                        ],
+                        "align": "center"
+                    },
+                    {
+                        "type": "row",
+                        "content": [
+                            {
+                                "type": "button",
+                                "content": "按钮3",
+                                "backgroundColor": "#000000",
+                                "textColor": "#ffffff",
+                                "url": "/productList/product1"
+                            }
+                        ],
+                        "align": "center"
+                    }
+
+                ]
+            }
+        ],
+        "primaryColor": "#ccddff",
+        "secondaryColor": "#334477",
+        "backgroundColor": "#303030",
+        "textColor": "#ffffff",
+        "align": "horizontal",
+        "height": 100,
+        "background": "/imgs/resources/1.jpg"
+    },
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "沿着荷塘，是一条曲折的小煤屑路。{.text-h5}\n\n这是一条幽僻的路；白天也少人走，夜晚更加寂寞。",
+                "align": "center"
+            }
+        ],
+        "secondaryColor": "#ffff00",
+        "backgroundColor": "#000000",
+        "textColor": "#eeeeee",
+        "align": "horizontal",
+        "height": 40
+    },
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "card",
+                "content": [
+                    {
+                        "type": "image",
+                        "content": "/imgs/resources/small/3.jpg",
+                        "height": "50%"
+                    },
+                    {
+                        "type": "text",
+                        "content": "[荷塘四面]{.red}，长着许多树，蓊蓊郁郁的。路的一旁，是些杨柳，和一些不知道名字的树。\n\n@@slot@@",
+                        "slots": [
+                            {
+                                "type": "button",
+                                "content": "了解更多",
+                                "backgroundColor": "#c0c0c0",
+                                "textColor": "#000000",
+                                "url": "https://taobao.com"
+                            }
+                        ],
+                        "align": "right"
+                    }
+                ],
+                "backgroundColor": "#202020",
+                "textColor": "#ffffff"
+            },
+            {
+                "type": "card",
+                "content": [
+                    {
+                        "type": "text",
+                        "content": "没有月光的晚上，这路上阴森森的，有些怕人。今晚却很好，虽然月光也还是淡淡的。\n\n@@slot@@",
+                        "slots": [
+                            {
+                                "type": "button",
+                                "content": "了解更多",
+                                "backgroundColor": "#202020",
+                                "textColor": "#ffffff",
+                                "url": "https://jd.com"
+                            }
+                        ],
+                        "align": "left"
+                    },
+                    {
+                        "type": "image",
+                        "content": "/imgs/resources/small/4.jpg",
+                        "height": "50%"
+                    }
+                ],
+                "backgroundColor": "#c0c0c0"
+            }
+        ],
+        "secondaryColor": "#ffff00",
+        "textColor": "#000000",
+        "height": 60
+    },
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "md/slide2.md"
+            },
+            {
+                "type": "image",
+                "content": "/imgs/resources/small/3.jpg",
+                "width": "20%",
+                "height": "100%"
+            }
+        ],
+        "primaryColor": "#004488",
+        "secondaryColor": "#0088cc",
+        "backgroundColor": "#ffffff",
+        "textColor": "#000000",
+        "align": "horizontal",
+        "height": 0
+    },
+    {
+        "type": "slide",
+        "content": [
+            {
+                "type": "text",
+                "content": "md/slide3.md"
+            }
+        ],
+        "backgroundColor": "#c0c0c0",
+        "textColor": "#000000",
+        "height": 0
+    }
+]
