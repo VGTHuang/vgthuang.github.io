@@ -6,4 +6,4 @@
 
 | 内容1 | 内容2 | 内容3 | 内容4 |
 |----|----|----|----|
-| 1234-5678 | 1234-5678 | ![img](/imgs/resources/small/qr.jpg) | ![img](/imgs/resources/small/qr.jpg) |
+| 1234-5678 | 1234-5678 | ![img](./imgs/resources/small/qr.jpg) | ![img](./imgs/resources/small/qr.jpg) |

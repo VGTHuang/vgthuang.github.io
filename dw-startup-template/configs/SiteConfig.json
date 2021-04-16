@@ -1,8 +1,8 @@
 {
     "companyName": "公司名称",
-    "companyLogo": "/imgs/logo.png",
-    "primaryColor": "#404040",
-    "secondaryColor": "#808080",
+    "companyLogo": "./imgs/logo.png",
+    "primaryColor": "#404080",
+    "secondaryColor": "#8080f0",
     "backgroundColor": "#ffffff",
     "textColor": "#000000",
     "defaultPages": {
@@ -10,10 +10,10 @@
         "notFoundPage": "/404"
     },
     "pageConfigDictionary": {
-        "/home": "/configs/homepage.json",
-        "/404": "/configs/404.json",
-        "/productList/product1": "/configs/product1.json",
-        "/productList/product2": "/configs/product2.json"
+        "/home": "./configs/homepage.json",
+        "/404": "./configs/404.json",
+        "/productList/product1": "./configs/product1.json",
+        "/productList/product2": "./configs/product2.json"
     },
     "siteMap": [
         {

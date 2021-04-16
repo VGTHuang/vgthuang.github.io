@@ -8,13 +8,13 @@
                 "align": "center"
             }
         ],
-        "background": "/imgs/resources/5.jpg",
+        "background": "./imgs/resources/5.jpg",
         "textColor": "#ffffff",
         "height": 30
     },
     {
         "type": "article",
-        "content": "/md/product1_introduction.md",
+        "content": "./md/product1_introduction.md",
         "slots": [
             {
                 "type": "row",
