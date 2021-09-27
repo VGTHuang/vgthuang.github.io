@@ -3,6 +3,7 @@ layout: post
 title: "Marquis Yi of Zeng"
 author: "VGTHuang"
 tags: Others
+excerpt_text: "Some messing-around"
 ---
 
 
@@ -44,11 +45,11 @@ Amid the dazzles of his aged bequest.
 
 Wherefore hurried gaits of thee don't halt
 
-and to the lord not take a humble bow:
+And to the lord not take a humble bow:
 
 He, whose name refused by fickle lot,
 
-and bless from astral Gods did ne'er endow.
+And bless from astral Gods did ne'er endow.
 
 
 &nbsp;
@@ -56,11 +57,11 @@ and bless from astral Gods did ne'er endow.
 
 Do flinty statues, bared from heavy soil
 
-with occultists signed their spells upon
+With occultists signed their spells upon
 
 Or engorged ghouls, around the ware they coil
 
-shall disperse profanity of the throng?
+Shall disperse profanity of the throng?
 
 
 &nbsp;
@@ -68,11 +69,11 @@ shall disperse profanity of the throng?
 
 Yet all beneath the ruin canst one trace
 
-in silent form they writhe their crouching bones.
+In silent form they writhe their crouching bones.
 
 What from crumbling tomes did time efface
 
-revived from many carvings on the stones:
+Revived from many carvings on the stones:
 
 
 &nbsp;
@@ -80,7 +81,7 @@ revived from many carvings on the stones:
 
 Thy bastion must be fortified and grand,
 
-along the ridge thy guardsmen do patrol;
+Along the ridge thy guardsmen do patrol;
 
 In gleaming light of morn they wake and stand,
 
@@ -92,7 +93,7 @@ When night closes in, the curfew gong they toll.
 
 Thy warriors must be prowess and robust,
 
-the heavy corslet front and back they tog;
+The heavy corslet front and back they tog;
 
 Their sanguined spears to foreign villains thrust,
 
@@ -108,7 +109,7 @@ A Thamyris, knowledged in pitch and rhyme,
 
 To his air e'en dullest one may seel
 
-and all so softly sing a tuneful hymn.
+And all so softly sing a tuneful hymn.
 
 
 &nbsp;
@@ -189,6 +190,10 @@ Je suis Charlie, no extra blood to spill.
 Who will get your power and the glory?
 
 Who lives, who dies, who tells them of your story?
+
+
+&nbsp;
+
 
 What shade of crane is cast on cold lagoon?
 
