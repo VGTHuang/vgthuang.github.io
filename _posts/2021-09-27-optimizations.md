@@ -7,22 +7,28 @@ tags: cv ml
 
 ---
 
- optimization aims to achieve
-$$
-w^*=\mbox{argmin}_w L(w)
-$$
-Where $\omega$ is the weights of a model and $L$ is the loss.
+ Optimization aims to achieve
+
+ $$
+ w^*=\mbox{argmin}_w L(w)
+ $$
+
+ Where $$\omega$$ is the weights of a model and $$L$$ is the loss.
 
 2 ways to compute gradient:
 
 - **Numeric approach** - compute with definition of (partial) derivative
+
 $$
 \frac{\mbox{d}f(x)}{\mbox{d}x}=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}
 $$
-- **Analytic approach** - compute $\grad_w L$ in
+
+- **Analytic approach** - compute $$\nabla_w L$$ in
+
 $$
 L=\frac{1}{N}\sum_{i=1}^{N}L_i\quad(+ \sum_{k}w^k )
 $$
+
 
 In practice it's always analytic approach, but numeric gradient could be used to check the correctness.
 
@@ -60,24 +66,27 @@ Gradient descent refers to the general optimization methods of updating values o
 ### Batch GD
 
 GD requires all data to be loaded at the same time:
+
 $$
 L(W)=\frac{1}{N}\sum_{i=1}^{N}L_i(x_i,y_i,W)+\lambda R(W)\\
-\grad_WL(W)=\frac{1}{N}\sum_{i=1}^{N}\grad_WL_i(x_i,y_i,W)+\lambda \grad_WR(W)\\
+\nabla_WL(W)=\frac{1}{N}\sum_{i=1}^{N}\nabla_WL_i(x_i,y_i,W)+\lambda \nabla_WR(W)\\
 $$
-Full sum is expensive when $N$ is large.
+
+Full sum is expensive when $$N$$ is large.
 
 Batch GD uses a minibatch of examples to approximate sum.
 
 ### SGD
 
 Stochastic gradient descent approximate expectation via sampling:
+
 $$
 L(W)=\mathbb{E}_{(x,y) \sim p_{data}}[L(x,y,W)]+\lambda R(W)\\
 \approx\frac{1}{N}\sum_{i=1}^{N}L(x_i,y_i,W)+\lambda R(W)\\
 $$
 
 $$
-\grad_WL(W)=\grad_W\mathbb{E}_{(x,y) \sim p_{data}}[L(x,y,W)]+\lambda \grad_WR(W)\\
-\approx\frac{1}{N}\sum_{i=1}^{N}\grad_WL_i(x_i,y_i,W)+\lambda \grad_WR(W)\\
+\nabla_WL(W)=\nabla_W\mathbb{E}_{(x,y) \sim p_{data}}[L(x,y,W)]+\lambda \nabla_WR(W)\\
+\approx\frac{1}{N}\sum_{i=1}^{N}\nabla_WL_i(x_i,y_i,W)+\lambda \nabla_WR(W)\\
 $$
 
