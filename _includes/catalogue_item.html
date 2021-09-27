@@ -8,15 +8,17 @@
     <div class="catalogue-line"></div>
 
     <p>
-      {% if post.excerpt_separator %}
-        {{ post.excerpt | strip_html }}
-      {% else %}
-        {{ post.content | strip_html | truncatewords: 30 }}
-      {% endif %}
+        {% if post.excerpt_text %}
+          {{ post.excerpt_text }}
+        {% elsif post.excerpt_separator %}
+          {{ post.excerpt | strip_html }}
+        {% else %}
+            {{ post.content | strip_html | truncatewords: 30 }}
+        {% endif %}
     </p>
 
   </div>
-  {% if post.header-img %}
-  <img src="{{post.header-img}}" class="catalogue-item-img" />
+  {% if post.header_img %}
+  <img src="{{post.header_img}}" class="catalogue-item-img" />
   {% endif %}
 </a>
