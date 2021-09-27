@@ -1,0 +1,37 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'tale';
+
+@media (min-width: 600px) {
+    .catalogue-item {
+        display: flex;
+        align-items: center;
+        .catalogue-item-text {
+            flex: 1;
+        }
+        .catalogue-item-img {
+            margin: 0 1rem 0;
+            height: 10rem;
+            width: 10rem;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 599px) {
+    .catalogue-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .catalogue-item-text {
+            flex: 1;
+        }
+        .catalogue-item-img {
+            margin: 0 1rem 0;
+            height: 10rem;
+            width: 10rem;
+            object-fit: cover;
+        }
+    }
+}
