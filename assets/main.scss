@@ -39,3 +39,14 @@
 code {
     font-family: Consolas, 'Courier New', monospace;
 }
+
+blockquote {
+    border-left-color: $grey-1;
+    background-color: $grey-3;
+    color: $default-color;
+    padding: 2em;
+    font-size: .95em;
+    h3 {
+        margin-top: 0;
+    }
+}
