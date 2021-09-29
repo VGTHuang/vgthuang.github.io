@@ -125,9 +125,8 @@ We can prove that SGD is an **unbiased estimator** of the gradients.
 >
 > 
 >
-> 
 
-Why SGD over GD: SGD is faster simply in the way that it descends more frequently than GD, therefore, faster. If a dataset has 10,000 examples, for GD it would be 10,000 examples per iteration (slow), while SGD with a batch size of 10 would be 1000x faster.
+Why SGD over GD: SGD is preferred simply in the way that it descends more frequently than GD, therefore, faster. If a dataset has 10,000 examples, for GD it would be 10,000 examples per iteration (slow), while SGD with a batch size of 10 would be 1000x faster.
 
 ## SGD + Momentum
 
@@ -154,10 +153,100 @@ Problems with SGD
   > 
   >
   > or, $$(\textbf{H}_f)_{i,j}=\frac{\partial^2f}{\partial x_i \partial x_j}$$
-  
+
   > ### Recap: Condition Number
   >
-  > In the field of numerical analysis, the condition number of a function with respect to an argument measures how much the output value of the function can change for a small change in the input argument.
+  > In the field of numerical analysis, the condition number of a function with respect to an argument measures how much the output value of the function can change for a small change in the input argument. For example In a linear function $$Ax=b$$, condition number measures the sensitivity of vector $$x$$ in regard of a small perturbation of $$b$$. A problem is said to be *well conditioned* if the condition number is small and *ill conditioned* if the condition number is large.
+  >
+  > In the context of SGD, suppose we are to optimize $$f(x)$$. According to Taylor series
+  >
+  > 
+  > $$
+  > \begin{align*}
+  > f(x)&=f(x_0)+(x-x_0)^Tg+\frac{1}{2}(x-x_0)^TH(x-x_0)+...\\
+  > &\approx f(x_0)+(x-x_0)^Tg+\frac{1}{2}(x-x_0)^TH(x-x_0)\\
+  > f(x_0-\epsilon g)&\approx f(x_0)-\epsilon g^T g + \frac{1}{2}\epsilon ^2 g^T H g
+  > \end{align*}
+  > $$
+  > 
+  >
+  > Where $$x_0$$ is the current location, $$\epsilon$$ is the learning rate, $$g$$ is gradient of $$f(x)$$ at $$x_0$$, and $$H$$ is Hessian matrix at $$x_0$$.
+  >
+  > > ### Property of real symmetric matrix
+  > >
+  > > For any real symmetric matrix $$H$$,
+  > >
+  > > 
+  > > $$
+  > > \forall {\bf v} \in \mathbb{R}^n ,\left\|{\bf v}\right\|=1\longrightarrow {\bf v}^T H {\bf v}\le\lambda_{\max}
+  > > $$
+  > > 
+  > >
+  > > *Proof.*
+  > >
+  > > 
+  > > $$
+  > > H = Q\Lambda Q^T \mbox{(diagonalization)}\\
+  > > {\bf v}^T H{\bf v} = {\bf v}^T Q\Lambda Q^T{\bf v}
+  > > $$
+  > > 
+  > >
+  > > Let $${\bf y}=Q^T {\bf v}$$, then
+  > >
+  > > 
+  > > $$
+  > > \begin{align}
+  > > {\bf v}^T H {\bf v} &= {\bf y}^T\Lambda{\bf y}\\
+  > > &= \lambda_{\max} y_1^2 + \lambda_2 y_2^2 + ... +\lambda_{\min} y_N^2 \\
+  > > &\le \lambda_{\max} y_1^2 + \lambda_{\max} y_2^2 + ... +\lambda_{\max} y_N^2 \\
+  > > &= \lambda_{\max} (y_1^2 + y_2^2 + ... + y_N^2) \\
+  > > &= \lambda_{\max} {\bf y}^T {\bf y} \\
+  > > \end{align}
+  > > $$
+  > > 
+  > >
+  > > Because $$Q^{-1}=Q^T$$, $$QQ^T=I$$,
+  > >
+  > > 
+  > > $$
+  > > {\bf y}^T {\bf y}={\bf v}^TQQ^T {\bf v}={\bf v}^T{\bf v}\\
+  > > {\bf y}^T\Lambda{\bf y}\le\lambda_{\max} {\bf y}^T {\bf y}={\bf v}^T{\bf v}\\
+  > > $$
+  > > 
+  > >
+  > > And because  $${\bf v}^T H {\bf v} = {\bf y}^T\Lambda{\bf y}$$, $$ \left\|{\bf v}\right\| =1$$ ,
+  > >
+  > > 
+  > > $$
+  > > \begin{align}
+  > > {\bf v}^T H {\bf v}&\le\lambda_{\max} {\bf v}^T {\bf v}\\
+  > > {\bf v}^T H {\bf v}&\le \lambda_{\max} &\hfill \square
+  > > \end{align}
+  > > $$
+  > > 
+  > >
+  > > Similarly, $${\bf v}^T H {\bf v} \ge \lambda_{\min}$$.
+  >
+  > So, the optimal $$\epsilon=\epsilon ^*$$ should be
+  >
+  > 
+  > $$
+  > \begin{align*}
+  > f(x_0-\epsilon g)\approx f(x_0)-\epsilon g^T g + \frac{1}{2}\epsilon ^2 g^T H g\\
+  > \frac{\partial f(x_0-\epsilon ^* g)}{\partial\epsilon ^*}=0, \epsilon ^* = \frac{g^T g}{g^T H g} \ge \frac{1}{\lambda_{\max}}
+  > \end{align*}
+  > $$
+  > 
+  >
+  > Similarly, $$\epsilon ^*\le \frac{1}{\lambda_{\min}}$$. Therefore
+  >
+  > 
+  > $$
+  > \frac{1}{\lambda_{\max}} \le \epsilon ^* \le \frac{1}{\lambda_{\min}}
+  > $$
+  > 
+  >
+  > 
 
 - Local minimum & saddle point: not convex.
 - Stochastic part introduces noise.
