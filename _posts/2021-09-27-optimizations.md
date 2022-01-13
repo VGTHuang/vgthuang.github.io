@@ -252,3 +252,13 @@ Problems with SGD
 - Stochastic part introduces noise.
 
 Improvement: SGD + momentum.
+
+
+$$
+v_{t+1}=\rho v_t + \nabla f(x_t) \\
+x_{t+1}=x_t - \alpha v_{t+1}
+$$
+
+
+
+
