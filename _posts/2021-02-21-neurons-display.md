@@ -7,4 +7,4 @@ tags: Graphics
 header_img: "/assets/post_imgs/neurons.png"
 ---
 
-[Demo](https://vgthuang.github.io/three.js/neurons/) <!--more-->
+[Demo](https://vgthuang.github.io/neurons/) <!--more-->
