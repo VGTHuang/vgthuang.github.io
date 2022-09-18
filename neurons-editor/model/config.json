@@ -1,0 +1,141 @@
+{
+    "fileList": [
+        "N002_new_use_a.obj",
+        "neurons.zip"
+    ],
+    "aliases": {
+        "N002_new_use_a": "N002_神经元",
+        "neurons.zip_N028_use": "defaultneurons",
+        "neurons.zip_N014_new_use": "neurons-alias"
+    },
+    "groups": {
+        "another group": [
+            "N002_神经元"
+        ],
+        "默认分组11": [
+            "defaultneurons"
+        ],
+        "sdf": [
+            "neurons-alias"
+        ],
+        "默认分组": []
+    },
+    "materials": {
+        "N002_神经元": {
+            "type": 1,
+            "primaryColor": "#ffffff",
+            "secondaryColor": "#000000",
+            "shininess": 1,
+            "visible": true
+        },
+        "defaultneurons": {
+            "type": 1,
+            "primaryColor": "#ff0000",
+            "secondaryColor": "#000000",
+            "shininess": 16,
+            "visible": true
+        },
+        "neurons-alias": {
+            "type": 1,
+            "primaryColor": "#b0b0b0",
+            "secondaryColor": "#000000",
+            "shininess": 16,
+            "visible": true
+        }
+    },
+    "scene": {
+        "background": "#CCDCD2",
+        "lighting": [
+            {
+                "color": "#2bff0a",
+                "strength": 1
+            },
+            {
+                "color": "#ffe600",
+                "strength": 0.5
+            },
+            {
+                "color": "#bffcff",
+                "strength": 0.65
+            }
+        ],
+        "camera": {
+            "type": 0,
+            "panSpeed": 0.5,
+            "position": [
+                1882.4092385281892,
+                2242.00168891258,
+                5080.033325759718
+            ],
+            "target": [
+                2188.6071597417385,
+                2368.4176460176077,
+                5195.807095946781
+            ],
+            "up": [
+                0,
+                1,
+                0
+            ]
+        }
+    },
+    "tags": [
+        {
+            "position": [
+                1823.540283203125,
+                2253.10888671875,
+                5425.28857421875
+            ],
+            "text": "N002神经元",
+            "fontItalic": false,
+            "fontBold": false,
+            "fontSize": 28,
+            "textAlign": "center",
+            "fontColor": "#009812FF",
+            "hasBorder": true,
+            "borderColor": "#FF1C1CFF",
+            "borderRadius": 10,
+            "borderThickness": 4,
+            "hasBackground": true,
+            "backgroundColor": "#000FFF4F"
+        },
+        {
+            "position": [
+                1841.9700927734375,
+                2264.963134765625,
+                5439.09716796875
+            ],
+            "text": "N002神经元\nabcde",
+            "fontItalic": true,
+            "fontBold": true,
+            "fontSize": 24,
+            "textAlign": "right",
+            "fontColor": "#ffffffff",
+            "hasBorder": true,
+            "borderColor": "#000000ff",
+            "borderRadius": 2,
+            "borderThickness": 1,
+            "hasBackground": true,
+            "backgroundColor": "#80808050"
+        },
+        {
+            "position": [
+                2217.619873046875,
+                2370.545166015625,
+                5163.94189453125
+            ],
+            "text": "defaultneurons",
+            "fontItalic": true,
+            "fontBold": true,
+            "fontSize": 28,
+            "textAlign": "left",
+            "fontColor": "#ffffffff",
+            "hasBorder": true,
+            "borderColor": "#000000ff",
+            "borderRadius": 2,
+            "borderThickness": 1,
+            "hasBackground": true,
+            "backgroundColor": "#80808050"
+        }
+    ]
+}
